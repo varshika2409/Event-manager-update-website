@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Event promotion website for an upcoming event.">
+    <title>Event Promotion</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: url('eve.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+
+        header {
+            background: rgba(255, 87, 51, 0.8);
+            color: #fff;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(51, 51, 51, 0.8);
+            padding: 0.5rem 0;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        section h2 {
+            color: #FF5733;
+        }
+
+        .event-details {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .event-details div {
+            flex: 1 1 45%;
+            margin: 0.5rem;
+            background: rgba(244, 244, 249, 0.9);
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            background: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .event-details {
+                flex-direction: column;
+            }
+
+            .event-details div {
+                flex: 1 1 100%;
+                margin: 0.5rem 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 1rem;
+            }
+
+            nav a {
+                margin: 0.5rem 0;
+            }
+
+            main {
+                padding: 0.5rem;
+            }
+
+            section h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Upcoming Event: CodeFest 2024</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#register">Register</a>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About the Event</h2>
+            <p>Join us for CodeFest 2024, a one-day event bringing together developers, designers, and tech enthusiasts to learn, network, and create!</p>
+        </section>
+
+        <section id="schedule">
+            <h2>Event Schedule</h2>
+            <div class="event-details">
+                <div>
+                    <h3>Opening Ceremony</h3>
+                    <p><strong>Time:</strong> 9:00 AM</p>
+                    <p><strong>Location:</strong> Main Hall</p>
+                </div>
+                <div>
+                    <h3>Workshops</h3>
+                    <p><strong>Time:</strong> 10:00 AM - 12:00 PM</p>
+                    <p><strong>Location:</strong> Workshop Rooms</p>
+                </div>
+                <div>
+                    <h3>Networking Lunch</h3>
+                    <p><strong>Time:</strong> 12:30 PM</p>
+                    <p><strong>Location:</strong> Cafeteria</p>
+                </div>
+                <div>
+                    <h3>Hackathon</h3>
+                    <p><strong>Time:</strong> 1:30 PM - 5:00 PM</p>
+                    <p><strong>Location:</strong> Hackathon Area</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="register">
+            <h2>Register Now</h2>
+            <p>Don’t miss out on this amazing event! <a href="#">Click here to register</a> and secure your spot today.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CodeFest. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
